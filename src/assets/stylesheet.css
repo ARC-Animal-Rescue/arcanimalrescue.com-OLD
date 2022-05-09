@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+    line-height: 1.2;
+    font-weight: 800;
+    font-size: 1.05em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.heading {
+    text-align: center;
+    font-size: 2em;
+}
+
+.slider {
+    background-color: rgb(184, 184, 184);
+}
+
+.overlay {
+    backdrop-filter: blur(1);
+    background-color: #525252da;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+}
+
+div[role="dialog"] {
+    z-index: 10000;
+}
+
+.slideshow img {
+    height: 500px !important;
+    width: auto !important;
+}
+
+.success-stories .fade {
+	height: 75vh;
+}
+
+.slider, .video, .counters, .success-stories, .mission-statements, .footer {
+	position: relative;
+}
+
+.fade {
+    background-color: white !important;
+    box-shadow: -60px 0 50px #fff;
+    position: absolute;
+    display: inline;
+    right: 0px;
+    height: 50vh;
+    width: 35vw;
+
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(1, rgba(255,255,255,0.0)), /* Top */
+        color-stop(0, rgba(255,255,255,1.0)) /* Bottom */
+    );
+
+    background: -moz-linear-gradient(
+        center bottom,
+        rgba(255,255,255,1.0) 0%, /* Bottom */
+        rgba(255,255,255,0.0) 100% /* Top */  
+    );
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+.mission-statements {
+	text-align: center;
+}
+
+.mission-statements div {
+    width: 19vw;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.mission-statements div img {
+    margin-top: 3vh;
+    position: relative;
+    width: 50%;
+}
+
+.video .fade-left{
+    z-index: 2;
+    overflow: visible;
+    position: relative;
+    float: left;
+    width: 16vw;
+    height: 75vh;
+    box-shadow: 60px 0 50px #fff;
+}
+
+.video .fade-right{
+    z-index: 2;
+    overflow: visible;
+    position: relative;
+    float: right;
+    width: 16vw;
+    height: 75vh;
+    box-shadow: -60px 0 50px #fff;
+}
+
+.success-stories .heading img {
+	float: none;
+}
+
+.counters {
+    position: relative;
+    width: 100vw;
+    overflow-y: visible;
+}
+
+.counters > div {
+    position: relative;
+    text-align: center;
+    width: 23vw;
+    display: inline-block;
+    vertical-align: middle;
+    color: gray;
+    min-height: 25h;
+    overflow-y: visible;
+}
+.counters .bg{
+    background-image: url('images/cat-outline.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.video {
+    text-align: center;
+}
+
+.success-stories {
+    background-color: rgb(184, 184, 184);
+}
+
+.success-stories img {
+    max-width: 66vw;
+    max-height: 75vh;
+    margin-right: 1vw;
+    float: right;
+}
+
+.success-stories div {
+    position: relative;
+    float: right !important;
+}
+
+.counters div h3 {
+    color: black;
+}
+
+.counters div .counter {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 10vh;
+    height: auto;
+    overflow-y: hidden;
+}
+
+.bottom {
+    position: relative;
+    top: 30%;
+    transform: translateY(-100%);
+}

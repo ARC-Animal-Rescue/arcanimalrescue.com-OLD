@@ -1,0 +1,21 @@
+.idea {
+    width: 90vw;
+    margin: 10px;
+}
+
+.idea * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.idea + .idea {
+    margin-top: 10px;
+}
+
+.idea img {
+    max-width: 25%;
+}
+
+.idea p {
+    width: 70%;
+}

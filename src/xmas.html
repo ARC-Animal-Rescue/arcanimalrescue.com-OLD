@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>ARC XMAS 2021</title>
+		
+		<script src="assets/xmas.js"></script>
+		<link rel="stylesheet" href="assets/xmas.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+		<link rel='stylesheet' href="assets/header.css">
+	</head>
+	<body>
+		<div class="nav">
+            <a href="contact.html"><img src="assets/images/bark.png"/></a>
+            <a href="index.html"><img src="assets/images/logo.png"/></a>
+            <a href="blog.html"><img src="assets/images/blog.png"/></a>
+            <a href="xmas.html"><img src="assets/images/xmas.png"/></a>
+            <a href="resources.html"><img src="assets/images/resources.png"/></a>
+            <a href="big-ideas.html"><img src="assets/images/big-ideas.png"/></a>
+            <a href=""><img src="assets/images/lyrics.png"/></a>
+            <a href="contact.html"><img src="assets/images/donations.png"/></a>
+            <!--<a href=""><img src="assets/images/search.png"/></a>-->
+
+            <br>
+
+            <i style="font-size: 1.3em; color: white;">"To Educate & Assist Folks to Love & Humanely Care for Plants & Animals"</i>
+        </div>
+
+		<div style="position:relative; width:100%; height:50%; display:inline-block; background: url('assets/images/xmas-header.jpg'); background-repeat: no-repeat; background-size:cover;">
+		
+			<h1 style="text-align: center; position:relative; top:50%; transform:translateY(-50%); font-size:4em; font-family:Imperial Script, cursive;">Merry X-Mas from ARC Animal Rescue!</h1>
+		</div>
+		
+		<div class="masonry" id="masonry">
+		
+		</div>
+		
+		<script>
+			window.addEventListener('load', async function() {
+				var res = await uploaded_images();
+				
+				for (var i=0; i<res.length; i++) {
+				
+					document.getElementById("masonry").innerHTML += `
+						<div class="item">
+							<img src="`+res[i].replace(/^"(.+(?="$))"$/, '$1')+`"/>
+						</div>
+					`;
+				}
+			});
+		</script>
+	</body>
+</html>
