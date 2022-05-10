@@ -9,6 +9,11 @@
     font-size: 1.05em;
 }
 
+.heading {
+    text-align: center;
+    font-size: 2em;
+}
+
 .nav {
 	display: inline-block;
     width: 100%;

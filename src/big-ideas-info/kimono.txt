@@ -2,4 +2,4 @@ KIMONO PROJECT: Following the creation of an art project that interprets a speci
 
 <br>
 
-<a href="post.html">Click for more Info</a>
+<a href="post.html?name=kimono">Click for more Info</a>

@@ -9,11 +9,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
-.heading {
-    text-align: center;
-    font-size: 2em;
-}
-
 .slider {
     background-color: rgb(184, 184, 184);
 }
