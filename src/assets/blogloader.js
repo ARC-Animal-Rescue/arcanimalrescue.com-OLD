@@ -1,4 +1,4 @@
-var headerHeight = window.getComputedStyle(document.querySelector('.nav'),null).getPropertyValue('height');
+var headerHeight = document.querySelector('.nav').clientHeight;
 var winHeight = window.innerHeight;
 
 var iframeHeight = winHeight-parseInt(headerHeight);
