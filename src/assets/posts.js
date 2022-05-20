@@ -10,7 +10,7 @@ async function loadBlog() {
             var req = await fetch(filename);
     		var description = await req.text();
     	    document.querySelector("#posts").innerHTML += `
-    	    <br><a style="font-size:1.2em;" href="post.html?name=`+filename.split("blog/")[1].split('.html')[0]+`">`+filename.split("blog/")[1].split('.html')[0]+`</a>
+    	    <br><a href="post.html?name=`+filename.split("blog/")[1].split('.html')[0]+`">`+filename.split("blog/")[1].split('.html')[0]+`</a><br>
     	    `
         }
     }

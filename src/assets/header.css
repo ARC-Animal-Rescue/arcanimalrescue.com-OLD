@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 * {
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     line-height: 1.2;
@@ -9,8 +8,13 @@
     font-size: 1.05em;
 }
 
+body {
+    margin: 0;
+}
+
 .heading {
     text-align: center;
+    color: red;
     font-size: 2em;
 }
 
