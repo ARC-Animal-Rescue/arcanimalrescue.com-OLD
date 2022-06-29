@@ -32,6 +32,10 @@ body {
     filter: invert(97%) sepia(15%) saturate(2%) hue-rotate(180deg) brightness(116%) contrast(100%);
 }
 
+.nav a:nth-child(5) img {
+    filter:none;
+}
+
 .nav a {
     display: inline-block;
 }
